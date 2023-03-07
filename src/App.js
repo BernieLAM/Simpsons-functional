@@ -90,6 +90,15 @@ const App = () => {
     });
   }
 
+  // const onEdit = (quote, character) => {
+  //   const index = simpsons.findIndex((simpsons) => simpsons.quote === quote);
+
+  //   const _simpsons = [...simpsons];
+  //   _simpsons[index].character = character;
+
+  //   setSimpsons(_simpsons);
+  // };
+
   return (
     <>
       <div className="menuBar">
@@ -125,6 +134,7 @@ const App = () => {
           onDelete={onDelete}
           filtered={filtered}
           onLike={onLike}
+          // onEdit={onEdit}
         />
       </div>
     </>

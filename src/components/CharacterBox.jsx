@@ -1,7 +1,20 @@
-import React from "react";
+import React from "react"; //, { useState }
 
 const CharacterBox = (props) => {
-  const { filtered, onDelete, onLike } = props;
+  const { filtered, onDelete, onLike } = props; // simpsons,onEdit
+
+  // const [edit, setEdit] = useState(false);
+  // const [character, setCharacter] = useState("");
+
+  // const onSave = () => {
+  //   setEdit(false); //----- turn off edit
+
+  //   onEdit(simpsons.quote, character); //----- call onEdit function
+  // };
+
+  // const onEditInput = (e) => {
+  //   setCharacter(e.target.value);
+  // };
 
   return (
     <>
@@ -19,6 +32,16 @@ const CharacterBox = (props) => {
           <div className="character">
             <p>{item.character}</p>
           </div>
+
+          {/* {edit ? (
+            <>
+              <input onInput={onEditInput} type="text" />
+              <button onClick={onSave}>Save</button>
+            </>
+          ) : (
+            <button onClick={() => setEdit(!edit)}>Edit</button>
+          )}
+          if (edit?) edit is true, show (<>to</>), otherwise (:) show.... */}
 
           <button className="imageButton">
             <img
